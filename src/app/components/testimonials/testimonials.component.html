@@ -1,0 +1,15 @@
+<div class="reviews mt-16 mb-4 mx-4 py-6 md:mx-20 rounded-lg px-4 md:px-6  bg-[#ebe8ab] ">
+    <div class="w-full mb-6">
+        <h2 class="title">What Customers Say</h2>
+        
+        <svg width="260" height="32" viewBox="0 0 260 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 17H246.5" stroke="#48552C" stroke-width="5" stroke-linecap="round"/>
+            <rect x="109.5" y="0.5" width="31" height="31" rx="15.5" fill="white"/>
+            <rect x="109.5" y="0.5" width="31" height="31" rx="15.5" stroke="#48552C"/>
+            <path d="M135.56 11.9333L126.867 20.6267C125.84 21.6533 124.16 21.6533 123.133 20.6267L114.44 11.9333" stroke="#48552C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+    
+    </div>
+    <app-opinion *ngFor="let opinion of listOfOpinions" [opinion]="opinion"></app-opinion>
+    <button class="w-full py-3 text-[#5e6f3c] border-solid border-[1px] rounded-lg border-[#5e6f3c] bg-[#fef4e0]">See other opinions</button>
+</div>

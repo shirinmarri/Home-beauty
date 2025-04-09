@@ -25,10 +25,19 @@
                 "glob": "**/*",
                 "input": "public"
               }
+            
             ],
+
+
             "styles": [
               "src/styles.css"
             ],
+            "stylePreprocessorOptions": {
+  "includePaths": []
+},
+
+
+
             "scripts": []
           },
           "configurations": {

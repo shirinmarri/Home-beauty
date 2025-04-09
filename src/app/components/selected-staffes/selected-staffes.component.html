@@ -1,0 +1,35 @@
+<div class="mt-16 mb-4 mx-4 py-6 md:mx-20 bg-[#effece] rounded-lg">
+    <div class="w-full flex flex-col justify-center items-center my-5">
+        <h2 class="title text-sm md:text-2xl">Your Favorite Staff This Month</h2>
+       
+<svg class="hidden md:block" width="406" height="32" viewBox="0 0 406 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3 16H403" stroke="#48552C" stroke-width="5" stroke-linecap="round"/>
+    <rect x="187.5" y="0.5" width="31" height="31" rx="15.5" fill="white"/>
+    <rect x="187.5" y="0.5" width="31" height="31" rx="15.5" stroke="#48552C"/>
+    <path d="M213.56 11.9333L204.867 20.6267C203.84 21.6534 202.16 21.6534 201.133 20.6267L192.44 11.9333" stroke="#48552C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <svg class=" md:hidden " width="102" height="32" viewBox="0 0 102 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.5 16H99.5" stroke="#48552C" stroke-width="5" stroke-linecap="round"/>
+        <rect x="36" y="0.5" width="31" height="31" rx="15.5" fill="white"/>
+        <rect x="36" y="0.5" width="31" height="31" rx="15.5" stroke="#48552C"/>
+        <path d="M62.06 11.9333L53.3667 20.6267C52.34 21.6534 50.66 21.6534 49.6333 20.6267L40.94 11.9333" stroke="#48552C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    
+    </div>
+    <div class="staffes flex w-full flex-wrap justify-center items-center gap-6">
+        <div class="staff flex flex-col justify-center items-center gap-6" *ngFor="let staff of staffs" >
+            <img  [src]="staff.image" [alt]="staff.expert" class="rounded-full w-[184px] md:w-[280px]">
+            <p class="text-[#48552C] text-xs">{{staff.name}}</p>
+            <h5 class="text-[#48552c] text-base font-semibold"> {{staff.expert}}</h5>
+            <div class="stars flex gap-1">
+                <ng-container *ngFor="let star of [1,2,3,4,5]">
+                    <svg width="24" height="24" viewBox="0 0 24 25" [class.fill-[#E0C153]]="star <= staff.stars" [class.fill-[#E5E7EB]]="star > staff.stars">
+                        <path d="M13.73 4.01L15.49 7.53C15.73 8.02 16.37 8.49 16.91 8.58L20.1 9.11C22.14 9.45 22.62 10.93 21.15 12.39L18.67 14.87C18.25 15.29 18.02 16.1 18.15 16.68L18.86 19.75C19.42 22.18 18.13 23.12 15.98 21.85L12.99 20.08C12.45 19.76 11.56 19.76 11.01 20.08L8.02 21.85C5.88 23.12 4.58 22.17 5.14 19.75L5.85 16.68C5.98 16.1 5.75 15.29 5.33 14.87L2.85 12.39C1.39 10.93 1.86 9.45 3.9 9.11L7.09 8.58C7.62 8.49 8.26 8.02 8.5 7.53L10.26 4.01C11.22 2.1 12.78 2.1 13.73 4.01Z" 
+                              stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </ng-container>
+            </div>
+
+        </div>
+    </div>
+</div>

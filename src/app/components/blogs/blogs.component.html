@@ -1,0 +1,19 @@
+<div class="blogs mx-4 md:mx-20 my-20 flex py-6 flex-wrap gap-4 md:gap-6 bg-[#fef4e0] items-center justify-center rounded-lg">
+    <div class=" w-full flex flex-col justify-center items-center">
+        <h2 class="title">Latest Beauty Blogs</h2>
+        
+  
+
+    
+<svg width="249" height="32" viewBox="0 0 249 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2.5 17H246.5" stroke="#48552C" stroke-width="5" stroke-linecap="round"/>
+    <rect x="109.5" y="0.5" width="31" height="31" rx="15.5" fill="white"/>
+    <rect x="109.5" y="0.5" width="31" height="31" rx="15.5" stroke="#48552C"/>
+    <path d="M135.56 11.9333L126.867 20.6267C125.84 21.6533 124.16 21.6533 123.133 20.6267L114.44 11.9333" stroke="#48552C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    
+    
+    </div>
+    <app-blog *ngFor="let blog of listOfBlogs" [blog]="blog"></app-blog>
+
+</div>

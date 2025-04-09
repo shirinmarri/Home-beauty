@@ -1,0 +1,45 @@
+<div class="px-4 md:px-20 flex mx-4 md:mx-20 gap-6 py-8 bg-[#fef6f6] my-7 rounded-lg">
+    <div class="about-us-text w-full md:w-1/2">
+        <h1 class="text-[28px] leading-8 text-[#4c2a2a] mb-3">About HomeBeauty</h1>
+        <div class="w-60 h-1 bg-[#48552c] mb-5"></div>
+        
+        <!-- Text container with max height and overflow control -->
+        <div class="relative">
+            <div #textContainer class="text-[#4D2A2A] text-[16px] leading-7 overflow-hidden transition-all duration-300"
+                [class.max-h-[500px]]="!showFullText"
+                [class.max-h-[none]]="showFullText">
+                <p>
+                    Home Beauty Salon offers a unique and comfortable experience for those seeking professional beauty services in the peaceful environment of their own home. By choosing these services, there's no longer any need to spend time and money commuting to beauty salons. With just a phone call or online booking, you can invite professional beauticians to your home at a time that suits you.
+                    <br><br>
+                    Home beauty salon services include a wide range of beauty treatments, such as:
+                    <br><br>
+                    • Professional makeup and styling for special occasions and ceremonies<br>
+                    • Haircut and styling using the latest techniques<br>
+                    • Hair coloring, highlights, and balayage<br>
+                    • Nail art and manicure/pedicure<br>
+                    • Waxing and hair removal for face and body<br>
+                    <br>
+                    All services are performed with strict adherence to hygiene standards and using high-quality tools and products, ensuring you can enjoy your beauty treatments with complete peace of mind.
+                    <br><br>
+                    A home beauty salon not only saves you time but also provides a private and tranquil space for your beauty treatments. This solution is particularly ideal for those with limited time or who prefer to stay in the comfort of their own home.
+                </p>
+            </div>
+            
+            <!-- Gradient fade effect (only shown when text is truncated) -->
+            <div *ngIf="!showFullText && needsTruncation" 
+                 class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent">
+            </div>
+        </div>
+        
+        <!-- Read More/Less button -->
+        <button *ngIf="needsTruncation" 
+                (click)="toggleText()"
+                class="mt-2 text-[#48552c] font-semibold hover:underline focus:outline-none">
+            {{ showFullText ? 'Read Less' : 'Read More...' }}
+        </button>
+    </div>
+    
+    <div class="pic hidden md:block md:w-1/2">
+        <img src="./images/hair-dry-pic.png" alt="Home beauty services">
+    </div>
+</div>

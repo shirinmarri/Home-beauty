@@ -1,0 +1,15 @@
+<div class=" mx-4 md:mx-20 my-20 flex py-6 flex-wrap gap-4 md:gap-6 bg-[#fcfef6] rounded-lg" >
+    <div class="w-full flex flex-col justify-center items-center">
+        <h2 class="title">Services</h2>
+        
+    <svg width="102" height="32" viewBox="0 0 102 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2.5 16H99.5" stroke="#48552C" stroke-width="5" stroke-linecap="round"/>
+    <rect x="36" y="0.5" width="31" height="31" rx="15.5" fill="white"/>
+    <rect x="36" y="0.5" width="31" height="31" rx="15.5" stroke="#48552C"/>
+    <path d="M62.06 11.9333L53.3667 20.6267C52.34 21.6534 50.66 21.6534 49.6333 20.6267L40.94 11.9333" stroke="#48552C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    
+    </div>
+<app-servic-card *ngFor="let service of listOfServices"  [service]="service"></app-servic-card>
+
+</div>
