@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
  
 })
 export class HeroSectionComponent {
-heroPicSrc:string = "/images/hairdresser-team.png" ;
+heroPicSrc:string = "./images/hairdresser-team.png" ;
 }
