@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './components/about-us/header/header.component';
 import { SgbuttonComponent } from './components/sgbutton/sgbutton.component';
-
 
 const routes: Routes = [
   // Your routes go here
