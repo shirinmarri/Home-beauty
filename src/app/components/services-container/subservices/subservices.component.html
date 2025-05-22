@@ -1,0 +1,19 @@
+<h2 class="title text-center text-[#5e6e3b] mt-8">{{ service.name }} Subservices</h2>
+<div  *ngIf="service" class="  my-20 flex px-4 py-6 flex-wrap items-center justify-center gap-4 md:gap-6 bg-[#fcfef6] rounded-lg">
+   
+    
+    <div class="w-[196px] h-[264px] md:w-[302px] md:h-[374px]"  *ngFor="let subService of service.subServices" class="p-4 border border-[#48552c]  rounded-lg my-4">
+        <img [src]="subService.subImage"  class="w-[190px] h-[190px] md:w-[280px] md:h-[280px] my-3 " alt="{{subService.name}}">
+       
+      <h3 class="text-lg font-semibold text-[#5e6e3b]">{{ subService.name }}</h3>
+      <p class="text-sm text-[#8ca15d] w-[180px] md:w-[286px]">{{ subService.details }}</p>
+      <p class="text-md font-bold text-[#5e6e3b] mt-2">Price: ${{ subService.price }}</p>
+    <button class="rounded-lg w-full border-solid border border-[#48552c] text-[#48552c] opacity-90 font-thin text-base py-2 my-4 bg-[#effece] ">Select this Service</button>
+
+    </div>
+  </div>
+  
+  <div *ngIf="!service">
+    <p>No service selected.</p>
+  </div>
+  

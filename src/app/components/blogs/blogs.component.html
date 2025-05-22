@@ -1,5 +1,5 @@
-<div class="blogs mx-4 md:mx-20 my-20 flex py-6 flex-wrap gap-4 md:gap-6 bg-[#fef4e0] items-center justify-center rounded-lg">
-    <div class=" w-full flex flex-col justify-center items-center">
+<div class="blogs mx-4 md:mx-20 px-4 md:px-6 my-20  flex py-6 flex-wrap  bg-[#fef4e0] items-center justify-center rounded-lg">
+    <div class=" w-full flex flex-col justify-center items-center  ">
         <h2 class="title">Latest Beauty Blogs</h2>
         
   
@@ -14,6 +14,9 @@
     
     
     </div>
+  <div class="flex flex-wrap w-full justify-between ">
     <app-blog *ngFor="let blog of listOfBlogs" [blog]="blog"></app-blog>
+    <button class=" mt-6 rounded-lg  w-full border-solid border-[1px] border-[#48552c] text-[#48552c] opacity-90 font-thin text-base py-2  bg-[#effece] ">See other articles</button>
+  </div>
 
 </div>

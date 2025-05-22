@@ -9,4 +9,8 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
   menuOptions: string[] = ['services', 'about us', 'contact us', 'Blogs'];
+   doSomething(text:string){
+    console.log(text);
+    
+   }
 }
